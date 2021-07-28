@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title id="title">AvImage Viewer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="keywords" content="Avimage, Image, Image Viewer,image web viewer">
+		<meta name="author" content="Hyper Lab Inc.">
+		<meta name="description" content="Advanced Web Image Viewer">
+		<link rel="stylesheet" type="text/css" href="script/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="script/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><button onclick="history.back();" title="Back">&LeftVector;</button></li>
+					<li><button onclick="history.go(0);" title="Reload">&orarr; </button></li>
+					<li><form oninput="percantage=100; inputupdate(); updateimage(); updateimage();"><input type="url" placeholder="Image URL" id="url" size="40"></form></li>
+					<li><form><button onclick="percantage-=5; inputupdate(); scale()" type="button">-</button><span id="size" style="margin:0 5px;" onclick="percantage=100; inputupdate();">100</span>% <button onclick="percantage+=5; inputupdate(); scale()" type="button">+</button></form></li>
+					<li><a href="" style="color:inherit; text-decoration:none;" id="download" target="_blank" download><button onclick="percantage-=5; inputupdate(); scale()" type="button" title="Download">&DownArrowBar;</button></a></li>
+					<li><button onclick="deg-=15;updateimage();">&cularr; </button><button onclick="deg+=15;updateimage();">&curarr;</button></li>
+					<li><a href="https://github.com/lucas7234" target="_blank">Github</a> <a href="https://github.com/lucas7234/avimage" target="_blank">Source Code</a><a target="_blank" href="https://playentry.org/profile/5a42019380babf2f93d62b53/project?sort=created">Profile</a></li>
+				</ul>
+			</nav>
+			<main onmouseover="img = this.children[0];"><img alt="Enter Image URL" id="imgmain" draggable="true"></main>
+		</header>
+	</body>
+</html>

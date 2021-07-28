@@ -1,0 +1,12 @@
+*{color:white;}
+body{background-color:gray;}
+header{background:#222; width:100%; position:fixed; left:0; top:0; height:10%;}
+nav ul li{list-style-type:none; margin:auto 20px; display:inline-block;}
+main{border:5px solid white; position:fixed; left:0; top:10%; height:90%;float:right; width:99%;}
+#imgmain{position:absolute; top:50%; left:50%; width:auto; height:auto;}
+button{background:#777; border:0; font-size:1.2rem; padding:1px 20px;}
+button:hover{color:#ddd; background:#555}
+input{color:black;}
+#url{background:#222; border:0; color:white; border:1px solid #222;}
+#url:hover{border:1px solid #ccc;}
+	a{margin-left:10px;}
